@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +16,7 @@ body {
 }
 
 header {
-    background:#DDEDF1;
+    background: #DDEDF1;
     color: #000000;
     padding: 0.5rem 0;
     position: fixed; 
@@ -27,8 +25,8 @@ header {
     width: 100%; 
     z-index: 1000; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
 }
+
 header.scrolled {
     background: #ffffff; 
     opacity: 0.5;
@@ -53,8 +51,8 @@ header nav ul li a {
     text-decoration: none;
     font-family: "Montserrat";
 }
-header nav ul li a:hover{
- color: red;
+header nav ul li a:hover {
+    color: red;
 }
 
 .hero {
@@ -66,7 +64,6 @@ header nav ul li a:hover{
     color: #fff; 
     text-align: center; 
     height: 100vh;
-   
 }
 
 .hero .container {
@@ -74,9 +71,9 @@ header nav ul li a:hover{
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
-    align-items: center; 
-   
+    align-items: center;
 }
+
 .container1 {
     display: flex;
     flex-direction: column; 
@@ -84,24 +81,24 @@ header nav ul li a:hover{
     align-items: center;
     text-align: center; 
     height: 100%;
- }
+}
 
- .container1 h2{
+.container1 h2 {
     font-size: 3rem;
     color: #ffffff; 
- }
+}
 
- .container1 p{
+.container1 p {
     font-size: 1.5rem;
     color: #f1f1f1; 
- }
- .container1 h2, 
- .container1 p {
-   
+}
+
+.container1 h2, 
+.container1 p {
     font-weight: 900; 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
- }
- 
+}
+
 .hero .cta {
     background: #fefefe;
     color: #000000;
@@ -112,10 +109,11 @@ header nav ul li a:hover{
     border-radius: 5px;
 }
 
-.cta:hover{
+.cta:hover {
     background-color: #608dce;
     color: #080905;
 }
+
 section {
     padding: 2rem 0;
 }
@@ -124,7 +122,6 @@ section h2 {
     text-align: center;
     margin-bottom: 1rem;
 }
-
 
 .container2 {
     margin-top: "0px";
@@ -184,7 +181,7 @@ section h2 {
 }
 
 /* Specific styles for item1 */
-.item1,.item2, .item3{
+.item1, .item2, .item3 {
     grid-row-start: 1;
     grid-row-end: 3; /* Span across two rows */
     background-color: rgba(255, 0, 0, 0.7); /* Different background color for item1 */
@@ -195,19 +192,17 @@ section h2 {
 
 /* Specific styling for item2 and item3 */
 .item2 {
-   
     background-image: url('image/fikri-rasyid-LJnRzbDFdI4-unsplash.jpg');
 }
 
 .item3 {
- 
     background-image: url('image/ai-generated-8012885_1280.jpg');
 }
 
 /* Add responsiveness */
 @media screen and (max-width: 768px) {
     .grid-container {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr; /* Stack grid items vertically */
     }
     .text h2 {
         font-size: 1.5rem;
@@ -217,18 +212,36 @@ section h2 {
     }
     .grid-container > div {
         font-size: 20px;
+        padding: 15px; /* Adjust padding on smaller screens */
+    }
+    header nav ul {
+        float: none; /* Remove floating */
+        text-align: center; /* Center nav items */
+    }
+    header nav ul li {
+        display: inline-block; /* Stack nav items horizontally */
+        margin-left: 10px;
+    }
+    header nav ul li a {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+    .container1 h2 {
+        font-size: 2rem; /* Adjust heading size */
     }
 }
 
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90%; /* Increase container width for small screens */
+    }
+    .hero .cta {
+        padding: 12px 25px; /* Increase button size */
+        font-size: 1.2rem; /* Adjust font size */
+    }
+    .container1 p {
+        font-size: 1.2rem; /* Adjust paragraph font size */
+    }
+}
 footer {
     background: #333;
     color: #fff;
