@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -57,13 +59,14 @@ header nav ul li a:hover {
 
 .hero {
     background: #007bff; 
-    background-image: url("image/cody-mclain-Wc5amP3eQho-unsplash.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("image/cody-mclain-Wc5amP3eQho-unsplash.jpg");
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center; 
     color: #fff; 
     text-align: center; 
     height: 100vh;
+
 }
 
 .hero .container {
@@ -84,13 +87,26 @@ header nav ul li a:hover {
 }
 
 .container1 h2 {
-    font-size: 3rem;
-    color: #ffffff; 
+    font-size: 5rem;
+    color:transparent; 
+    -webkit-text-stroke: 1px #ffffff; 
+    background-image: linear-gradient(#ffff,#ffff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -1050px 0;
+    animation: backcolor 3s linear infinite alternate;
+}
+@keyframes backcolor{
+    100%{
+        background-position: 0 0 ;
+    }
+
 }
 
 .container1 p {
     font-size: 1.5rem;
     color: #f1f1f1; 
+    
 }
 
 .container1 h2, 
@@ -137,6 +153,7 @@ section h2 {
     justify-content: center;
     width: 40vw;
     background-color: #E1E1E1;
+    
 }
 
 .text {
@@ -145,6 +162,7 @@ section h2 {
 }
 
 .text h2 {
+    
     font-size: 2rem;
     color: #a6abb0;
     font-weight: 700;
