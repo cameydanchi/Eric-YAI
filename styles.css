@@ -542,16 +542,20 @@ footer ul li a {
 
 /* For devices with width below 375px (Small phones like iPhone SE) */
 @media screen and (max-width: 375px) {
-    .contact{
-
-    }
+  .contact{
+   margin-bottom: 10px;
+  }
     .contact-container {
-        padding: 5px;
+        padding: 9px;
+        width: fit-content;
+    
+
     }
 
     .write-us,
     .contact-info {
-        padding: 10px;
+        padding: 20px;
+       
     }
 
     .write-us h2, .contact-info h2 {
@@ -605,4 +609,5 @@ footer ul li a {
     .contact-info ul li {
         font-size: 10px;
     }
+   
 }
