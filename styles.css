@@ -447,7 +447,6 @@ footer ul li a {
     display: flex;
     max-width: 900px;
     width: 100%;
-    background: #6a89d7;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 9px;
     overflow: hidden;
@@ -552,7 +551,7 @@ footer ul li a {
     .write-us,
     .contact-info {
         flex: 1;
-        margin-bottom: 20px; /* Space between sections */
+        margin-bottom: 10px; /* Space between sections */
     }
 
     .write-us h2, .contact-info h2 {
@@ -562,7 +561,7 @@ footer ul li a {
     .write-us form input,
     .write-us form textarea {
         font-size: 16px;
-        height: 45px;
+        height: 70px;
     }
 
     .write-us form button {
@@ -603,7 +602,7 @@ footer ul li a {
 
     .write-us form button {
         font-size: 14px;
-        padding: 12px 20px;
+        padding: 12px 10px;
     }
 
     .contact-info p,
