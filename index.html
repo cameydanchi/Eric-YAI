@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,12 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
-        </style>
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -31,17 +36,22 @@
         </div>
     </section>
 
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="about-container">
             <!-- Left Content -->
             <div class="about-text">
                 <h2 class="animate-heading">About Us</h2>
                 <p class="animate-paragraph">
-                    At <strong>Gyans Pump</strong>, we are committed to empowering farmers with innovative solutions to tackle the challenges of climate change and water scarcity. 
-                    Our flagship product, a <strong>portable, lightweight, and affordable mobile water pump</strong>, enables farmers to secure reliable water sources for year-round irrigation, ensuring greater crop yields and improved agricultural practices.
+                    At <strong>Gyans Pump</strong>, we are committed to empowering farmers with innovative solutions to
+                    tackle the challenges of climate change and water scarcity.
+                    Our flagship product, a <strong>portable, lightweight, and affordable mobile water pump</strong>,
+                    enables farmers to secure reliable water sources for year-round irrigation, ensuring greater crop
+                    yields and improved agricultural practices.
                 </p>
                 <p class="animate-paragraph">
-                    Through the <strong>Young Africa Innovates (YAI)</strong> program, we’ve refined our product based on customer feedback, improved branding, and discovered a niche market for sustainable farming tools. Together, we’re driving change in agriculture for a better future.
+                    Through the <strong>Young Africa Innovates (YAI)</strong> program, we’ve refined our product based
+                    on customer feedback, improved branding, and discovered a niche market for sustainable farming
+                    tools. Together, we’re driving change in agriculture for a better future.
                 </p>
                 <!-- <a href="#learn-more" class="cta-button animate-button">Learn More</a> -->
             </div>
@@ -59,8 +69,8 @@
             </div>
         </div>
     </section>
-    
-    
+
+
 
     <section id="services" class="services">
         <div class="container">
@@ -73,23 +83,32 @@
         </div>
     </section>
 
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2>Testimonials</h2>
-            <p>"This is the best service I have ever used!" - Happy Client</p>
-        </div>
-    </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Phone: +123-456-7890</p>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
+    <section class="contact">
+        <div class="contact-container">
+            <!-- Write Us Section -->
+            <div class="write-us">
+                <h2>Write us</h2>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea placeholder="Message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Information Section -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Kwame Danso</li>
+                    <li><i class="fas fa-phone-alt"></i> +233 551038136 </li>
+                    <li><i class="fas fa-envelope"></i> owusuericgyan78@gmail.com</li>
+                </ul>
+            </div>
         </div>
+
     </section>
 
     <footer>
@@ -101,6 +120,8 @@
             </ul>
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
+
 </html>

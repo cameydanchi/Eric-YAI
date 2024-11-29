@@ -1,5 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -21,16 +21,16 @@ header {
     background: #DDEDF1;
     color: #000000;
     padding: 0.5rem 0;
-    position: fixed; 
-    top: 0; 
+    position: fixed;
+    top: 0;
     left: 0;
-    width: 100%; 
-    z-index: 1000; 
+    width: 100%;
+    z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header.scrolled {
-    background: #ffffff; 
+    background: #ffffff;
     opacity: 0.5;
 }
 
@@ -53,89 +53,92 @@ header nav ul li a {
     text-decoration: none;
     font-family: "Montserrat";
 }
+
 header nav ul li a:hover {
     color: red;
 }
 
 .hero {
-    background: #007bff; 
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("image/cody-mclain-Wc5amP3eQho-unsplash.jpg");
-    background-attachment: fixed; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-position: center; 
-    color: #e2e2e2; 
-    text-align: center; 
+    background: #007bff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("image/cody-mclain-Wc5amP3eQho-unsplash.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #e2e2e2;
+    text-align: center;
     height: 100vh;
 
 }
 
 .hero .container {
-    height: 400px; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .container1 {
     display: flex;
-    flex-direction: column; 
-    justify-content: center; 
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center; 
+    text-align: center;
     height: 100%;
 }
 
 .container1 h2 {
     font-size: 5rem;
-    color:transparent; 
-    -webkit-text-stroke: 1px #f1f1f1; 
-    background-image: linear-gradient(#d20d0d,#ba1717);
+    color: transparent;
+    -webkit-text-stroke: 1px #f1f1f1;
+    background-image: linear-gradient(#d20d0d, #ba1717);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-position: -1050px 0;
     animation: backcolor 3s linear infinite alternate;
 }
-@keyframes backcolor{
-    100%{
-        background-position: 0 0 ;
+
+@keyframes backcolor {
+    100% {
+        background-position: 0 0;
     }
 
 }
 
 .container1 p {
     font-size: 1.5rem;
-    color: #f1f1f1; 
-    
+    color: #f1f1f1;
+
 }
 
-.container1 h2, 
+.container1 h2,
 .container1 p {
-    font-weight: 900; 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .hero .cta {
     --color: #faf7f7;
-  font-family: inherit;
-  display: inline-block;
-  width: 8em;
-  height: 2.6em;
-  line-height: 2.5em;
-  margin: 20px;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  border: 2px solid var(--color);
-  transition: color 0.5s;
-  z-index: 1;
-  font-size: 17px;
-  border-radius: 6px;
-  font-weight: 500;
-  color: var(--color);
-  text-decoration: none;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    text-decoration: none;
 }
+
 .cta:before {
     content: "";
     position: absolute;
@@ -144,9 +147,10 @@ header nav ul li a:hover {
     height: 150px;
     width: 200px;
     border-radius: 50%;
-  }
+}
+
 .cta:hover {
- 
+
     color: #cb1c1c;
 }
 
@@ -154,16 +158,17 @@ header nav ul li a:hover {
     top: 100%;
     left: 100%;
     transition: all 0.7s;
-  }
-  .cta:hover:before {
+}
+
+.cta:hover:before {
     top: -30px;
     left: -30px;
-  }
-  
-  .cta:active:before {
+}
+
+.cta:active:before {
     background: #3a0ca3;
     transition: background 0s;
-  }
+}
 
 section {
     padding: 2rem 0;
@@ -291,7 +296,8 @@ section h2 {
 .image-box {
     width: 100%;
     height: 200px;
-    overflow: hidden; /* Ensures the image stays within its box */
+    overflow: hidden;
+    /* Ensures the image stays within its box */
     border-radius: 10px;
     position: relative;
 }
@@ -305,11 +311,13 @@ section h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 3s ease; /* Smooth zoom-in animation */
+    transition: transform 3s ease;
+    /* Smooth zoom-in animation */
 }
 
 .image-box:hover .image {
-    transform: scale(1.2); /* Zooms in only within its container */
+    transform: scale(1.2);
+    /* Zooms in only within its container */
 }
 
 /* Animations */
@@ -335,6 +343,7 @@ section h2 {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -345,6 +354,7 @@ section h2 {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -354,6 +364,7 @@ section h2 {
     0% {
         transform: scale(0.8);
     }
+
     100% {
         transform: scale(1);
     }
@@ -376,28 +387,25 @@ section h2 {
 
 
 
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 480px) {
     .container {
-        width: 90%; /* Increase container width for small screens */
+        width: 90%;
+        /* Increase container width for small screens */
     }
+
     .hero .cta {
-        padding: 12px 25px; /* Increase button size */
-        font-size: 1.2rem; /* Adjust font size */
+        padding: 12px 25px;
+        /* Increase button size */
+        font-size: 1.2rem;
+        /* Adjust font size */
     }
+
     .container1 p {
-        font-size: 1.2rem; /* Adjust paragraph font size */
+        font-size: 1.2rem;
+        /* Adjust paragraph font size */
     }
 }
+
 footer {
     background: #333;
     color: #fff;
@@ -418,4 +426,188 @@ footer ul li {
 footer ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+/* General Contact Section */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-image: url("image/cool-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px; /* Added padding for small screens */
+    box-sizing: border-box;
+}
+
+/* Contact Form Container */
+.contact-container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background: #6a89d7;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 9px;
+    overflow: hidden;
+    flex-wrap: wrap; /* Allow items to wrap in smaller screens */
+}
+
+/* Write Us Section */
+.write-us {
+    flex: 1;
+    background: #6ac6e0;
+    padding: 30px;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.write-us h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.write-us form input,
+.write-us form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.write-us form input {
+    height: 40px;
+}
+
+.write-us form textarea {
+    resize: none;
+}
+
+.write-us form button {
+    background: #f39c12;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.write-us form button:hover {
+    background: #e67e22;
+}
+
+/* Contact Info Section */
+.contact-info {
+    flex: 1;
+    background: #201f24;
+    padding: 30px;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #bbb;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin: 10px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.contact-info ul li i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #f17d87;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For devices smaller than 768px (Tablets and mobile devices) */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack the sections vertically */
+        padding: 10px;
+    }
+
+    .write-us,
+    .contact-info {
+        flex: 1;
+        margin-bottom: 20px; /* Space between sections */
+    }
+
+    .write-us h2, .contact-info h2 {
+        font-size: 20px;
+    }
+
+    .write-us form input,
+    .write-us form textarea {
+        font-size: 16px;
+        height: 45px;
+    }
+
+    .write-us form button {
+        font-size: 14px;
+        padding: 12px 24px;
+    }
+
+    .contact-info p,
+    .contact-info ul li {
+        font-size: 12px;
+    }
+
+    .contact-info ul {
+        padding: 10px;
+    }
+}
+
+/* For very small devices like phones (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .contact-container {
+        padding: 5px;
+    }
+
+    .write-us,
+    .contact-info {
+        padding: 15px;
+    }
+
+    .write-us h2, .contact-info h2 {
+        font-size: 12px;
+    }
+
+    .write-us form input,
+    .write-us form textarea {
+        font-size: 12px;
+        height: 20px;
+    }
+
+    .write-us form button {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    .contact-info p,
+    .contact-info ul li {
+        font-size: 12px;
+    }
 }
