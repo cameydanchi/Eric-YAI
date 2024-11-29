@@ -438,19 +438,19 @@ footer ul li a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 20px; /* Added padding for small screens */
     box-sizing: border-box;
 }
 
 /* Contact Form Container */
 .contact-container {
     display: flex;
-    max-width: 900px;
-    width: 100%;
+    
+
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 9px;
     overflow: hidden;
     flex-wrap: wrap; /* Allow items to wrap in smaller screens */
+    
 }
 
 /* Write Us Section */
@@ -542,6 +542,9 @@ footer ul li a {
 
 /* For devices with width below 375px (Small phones like iPhone SE) */
 @media screen and (max-width: 375px) {
+    .contact{
+
+    }
     .contact-container {
         padding: 5px;
     }
