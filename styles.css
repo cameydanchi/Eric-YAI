@@ -539,74 +539,67 @@ footer ul li a {
     color: #f17d87;
 }
 
-/* Media Queries for Responsiveness */
 
-/* For devices smaller than 768px (Tablets and mobile devices) */
-@media screen and (max-width: 768px) {
-    .contact-container {
-        flex-direction: column; /* Stack the sections vertically */
-        padding: 10px;
-    }
-
-    .write-us,
-    .contact-info {
-        flex: 1;
-        margin-bottom: 10px; /* Space between sections */
-    }
-
-    .write-us h2, .contact-info h2 {
-        font-size: 20px;
-    }
-
-    .write-us form input,
-    .write-us form textarea {
-        font-size: 16px;
-        height: 70px;
-    }
-
-    .write-us form button {
-        font-size: 14px;
-        padding: 12px 24px;
-    }
-
-    .contact-info p,
-    .contact-info ul li {
-        font-size: 12px;
-    }
-
-    .contact-info ul {
-        padding: 10px;
-    }
-}
-
-/* For very small devices like phones (max-width: 480px) */
-@media screen and (max-width: 480px) {
+/* For devices with width below 375px (Small phones like iPhone SE) */
+@media screen and (max-width: 375px) {
     .contact-container {
         padding: 5px;
     }
 
     .write-us,
     .contact-info {
-        padding: 15px;
+        padding: 10px;
     }
 
     .write-us h2, .contact-info h2 {
-        font-size: 12px;
+        font-size: 18px; /* Smaller heading size for small screens */
     }
 
     .write-us form input,
     .write-us form textarea {
-        font-size: 12px;
-        height: 20px;
+        font-size: 14px;
+        height: 40px; /* Adjusted for smaller screens */
     }
 
     .write-us form button {
         font-size: 14px;
-        padding: 12px 10px;
+        padding: 12px 20px;
     }
 
     .contact-info p,
     .contact-info ul li {
         font-size: 12px;
+    }
+}
+
+/* For very small devices (max-width: 320px) */
+@media screen and (max-width: 320px) {
+    .contact-container {
+        padding: 5px;
+    }
+
+    .write-us,
+    .contact-info {
+        padding: 8px;
+    }
+
+    .write-us h2, .contact-info h2 {
+        font-size: 16px;
+    }
+
+    .write-us form input,
+    .write-us form textarea {
+        font-size: 12px;
+        height: 35px;
+    }
+
+    .write-us form button {
+        font-size: 14px;
+        padding: 12px 15px;
+    }
+
+    .contact-info p,
+    .contact-info ul li {
+        font-size: 10px;
     }
 }
