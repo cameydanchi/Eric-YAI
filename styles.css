@@ -176,6 +176,58 @@ section h2 {
 
 
 
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .logo {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        float: none;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    header nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.3rem 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+
+
 /* Container */
 .about-section {
     display: flex;
