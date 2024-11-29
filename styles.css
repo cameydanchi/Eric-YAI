@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -60,10 +60,11 @@ header nav ul li a:hover {
 .hero {
     background: #007bff; 
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("image/cody-mclain-Wc5amP3eQho-unsplash.jpg");
+    background-attachment: fixed; 
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center; 
-    color: #fff; 
+    color: #e2e2e2; 
     text-align: center; 
     height: 100vh;
 
@@ -89,8 +90,8 @@ header nav ul li a:hover {
 .container1 h2 {
     font-size: 5rem;
     color:transparent; 
-    -webkit-text-stroke: 1px #ffffff; 
-    background-image: linear-gradient(#ffff,#ffff);
+    -webkit-text-stroke: 1px #f1f1f1; 
+    background-image: linear-gradient(#d20d0d,#ba1717);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-position: -1050px 0;
@@ -116,19 +117,53 @@ header nav ul li a:hover {
 }
 
 .hero .cta {
-    background: #fefefe;
-    color: #000000;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin-top: 10px;
-    display: inline-block;
-    border-radius: 5px;
+    --color: #faf7f7;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+  text-decoration: none;
+}
+.cta:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+.cta:hover {
+ 
+    color: #cb1c1c;
 }
 
-.cta:hover {
-    background-color: #608dce;
-    color: #080905;
-}
+.cta:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  .cta:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .cta:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+  }
 
 section {
     padding: 2rem 0;
@@ -139,114 +174,165 @@ section h2 {
     margin-bottom: 1rem;
 }
 
-.container2 {
-    margin-top: "0px";
-    display: flex;
-    background-color: #ffffff;
-    height: 70vh;
-}
 
-.about-content {
+
+/* Container */
+.about-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    width: 40vw;
-    background-color: #E1E1E1;
-    
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(to right, #f9f9f9, #fff);
+    background-color: #FBFBFB;
 }
 
-.text {
-    text-align:left;
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    gap: 40px;
+}
+
+/* Text Section */
+.about-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
     margin-bottom: 30px;
 }
 
-.text h2 {
-    
-    font-size: 2rem;
-    color: #a6abb0;
-    font-weight: 700;
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.text p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    color: #555;
-    max-width: 800px;
-    margin: 0 auto;
+.cta-button:hover {
+    background-color: #0056b3;
 }
 
-/* Styling for the grid container */
-.grid-container {
+/* Images Section */
+.about-images {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-    gap: 5px; /* Space between items */
-    background-color: #ffffff; /* Background color of the grid container */
-    padding: 5px;
-    width: 60vw;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex: 1;
 }
 
-/* Styling for the grid items */
-.grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for a more modern look */
-    background-size: cover;
-    background-position: center;
-    color: #fff; 
+.image-box {
+    width: 100%;
+    height: 200px;
+    overflow: hidden; /* Ensures the image stays within its box */
+    border-radius: 10px;
+    position: relative;
 }
 
-/* Specific styles for item1 */
-.item1, .item2, .item3 {
-    grid-row-start: 1;
-    grid-row-end: 3; /* Span across two rows */
-    background-color: rgba(255, 0, 0, 0.7); /* Different background color for item1 */
-    border-radius: 12px; /* More rounded corners */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* More prominent shadow */
-    background-image: url('image/pexels-enginakyurt-4612383.jpg');
+.image-box.large {
+    grid-column: span 2;
+    height: 300px;
 }
 
-/* Specific styling for item2 and item3 */
-.item2 {
-    background-image: url('image/fikri-rasyid-LJnRzbDFdI4-unsplash.jpg');
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 3s ease; /* Smooth zoom-in animation */
 }
 
-.item3 {
-    background-image: url('image/ai-generated-8012885_1280.jpg');
+.image-box:hover .image {
+    transform: scale(1.2); /* Zooms in only within its container */
 }
 
-/* Add responsiveness */
-@media screen and (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* Stack grid items vertically */
+/* Animations */
+.animate-heading {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    animation: fade-in-down 1.5s ease-out both;
+    text-align: left;
+    font-size: 100px !important;
+}
+
+.animate-paragraph {
+    animation: fade-in 1.5s ease-in both 0.9s;
+}
+
+.animate-button {
+    animation: zoom-in 1s ease-in-out both 0.5s;
+}
+
+/* Animation Keyframes */
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
     }
-    .text h2 {
-        font-size: 1.5rem;
-    }
-    .text p {
-        font-size: 1rem;
-    }
-    .grid-container > div {
-        font-size: 20px;
-        padding: 15px; /* Adjust padding on smaller screens */
-    }
-    header nav ul {
-        float: none; /* Remove floating */
-        text-align: center; /* Center nav items */
-    }
-    header nav ul li {
-        display: inline-block; /* Stack nav items horizontally */
-        margin-left: 10px;
-    }
-    header nav ul li a {
-        font-size: 1.2rem; /* Adjust font size */
-    }
-    .container1 h2 {
-        font-size: 2rem; /* Adjust heading size */
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .image-box.large {
+        grid-column: span 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 480px) {
     .container {
