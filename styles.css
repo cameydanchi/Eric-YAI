@@ -23,11 +23,20 @@ header {
     top: 0;
     z-index: 10;
     background: white;
+    transition: background-color 0.3s ease;
 }
-header.scrolled{
-    background-color:rgb(255, 255, 255);
-    opacity: 0.5;
+header.scrolled {
+    background-color: rgb(255, 255, 255); /* White background */
+    opacity: 0.5;  /* Slightly higher opacity for better visibility of the content */
+    transition: all 0.3s ease;  /* Smooth transition when the class is added or removed */
 }
+
+
+/* Optional: To ensure text visibility with low opacity */
+header.scrolled * {
+    color: #000; /* Text color will be black to ensure readability */
+}
+
 
 .container {
     display: flex;
@@ -407,7 +416,7 @@ header.scrolled{
     width: 90%;  /* Make the slider container responsive */
     max-width: 1000px;  /* Max width for the slider */
     overflow: hidden;  /* Hide overflow outside the slider */
-    border-radius: 10px;  /* Rounded corners */
+   
 }
 
 /* Slider */
@@ -426,7 +435,7 @@ header.scrolled{
     width: 100%;  /* Full width for image */
     height: 100%;  /* Full height for image */
     object-fit: cover;  /* Cover the space without stretching */
-    border-radius: 10px;  /* Rounded corners for images */
+   
 }
 
 .product-description {
