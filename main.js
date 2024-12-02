@@ -1,10 +1,28 @@
-const header = document.querySelector('header');
+let currentSlide = 0;
 
-// Listen to the scroll event
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {  // When the user scrolls down 50px or more
-        header.classList.add('scrolled');  // Add the "scrolled" class
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+    if (index >= totalSlides) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = totalSlides - 1;
     } else {
-        header.classList.remove('scrolled');  // Remove the "scrolled" class
+        currentSlide = index;
     }
-});
+    const slider = document.querySelector('.slider');
+    slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
+
+function moveSlide(direction) {
+    showSlide(currentSlide + direction);
+}
+
+// Automatically move to the next slide every 3 seconds
+setInterval(() => {
+    moveSlide(1);
+}, 9500);
+
+// Initial slide
+showSlide(currentSlide);

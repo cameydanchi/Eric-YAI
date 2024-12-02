@@ -25,7 +25,8 @@ header {
     background: white;
 }
 header.scrolled{
-    background-color: transparent;
+    background-color:rgb(255, 255, 255);
+    opacity: 0.5;
 }
 
 .container {
@@ -119,7 +120,7 @@ header.scrolled{
         justify-content: center;
         align-items: center;
     }
-
+  
     .logo {
         font-size: 22px; /* Adjusted for smaller screens */
     }
@@ -194,6 +195,7 @@ header.scrolled{
         flex-direction: column;
         margin-top: 10px;
         text-align: center;
+        
     }
 
     .nav-links li {
@@ -363,5 +365,274 @@ header.scrolled{
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+    }
+}
+
+
+
+
+/* Main Slider Section */
+.slider-section {
+    display: flex;  /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;  /* Center content vertically */
+    align-items: center;  /* Center content horizontally */
+    height: 100vh;  /* Full viewport height */
+    background-color: #f7f7f7;  /* Light background color */
+    padding: 30px 0;  /* Padding around the section */
+}
+
+/* Quality Message */
+.quality-message {
+    text-align: center;  /* Center align the text */
+    margin-bottom: 40px;  /* Space below the quality message */
+}
+
+.slider-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50;  /* Dark color for the heading */
+    margin-bottom: 10px;
+}
+
+.quality-message p {
+    font-size: 18px;
+    color: #7f8c8d;  /* Lighter color for the description */
+    margin-top: 0;
+}
+
+/* Slider Container */
+.slider-container {
+    position: relative;
+    width: 90%;  /* Make the slider container responsive */
+    max-width: 1000px;  /* Max width for the slider */
+    overflow: hidden;  /* Hide overflow outside the slider */
+    border-radius: 10px;  /* Rounded corners */
+}
+
+/* Slider */
+.slider {
+    display: flex;  /* Flexbox for horizontal layout of slides */
+    transition: transform 0.5s ease-in-out;  /* Smooth sliding transition */
+}
+
+.slide {
+    min-width: 100%;  /* Each slide takes up full width */
+    height: 400px;  /* Fixed height for slides */
+    position: relative;  /* For absolute positioning of text */
+}
+
+.slide img {
+    width: 100%;  /* Full width for image */
+    height: 100%;  /* Full height for image */
+    object-fit: cover;  /* Cover the space without stretching */
+    border-radius: 10px;  /* Rounded corners for images */
+}
+
+.product-description {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 18px;
+    color: #fff;  /* White text color for description */
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);  /* Dark background */
+    color: white;
+    font-size: 40px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 10;  /* Ensure buttons are above the images */
+    border-radius: 5px;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);  /* Darken on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .slider-heading {
+        font-size: 28px;  /* Smaller heading on mobile */
+    }
+
+    .quality-message p {
+        font-size: 16px;  /* Smaller text on mobile */
+    }
+
+    .product-description {
+        font-size: 16px;  /* Smaller font size for description */
+    }
+
+    .prev, .next {
+        font-size: 30px;  /* Smaller arrows on mobile */
+    }
+}
+
+
+/* contact */
+/* Main Contact Section */
+.contact {
+    display: flex;  /* Flexbox layout */
+    justify-content: center;  /* Center the content horizontally */
+    align-items: center;  /* Center the content vertically */
+    padding: 50px 0;  /* Top and bottom padding for spacing */
+    background-color: #ecf0f1;  /* Light background color */
+}
+
+/* Contact Container */
+.contact-container {
+    width: 90%;  /* Make it responsive */
+    max-width: 800px;  /* Max width for the contact section */
+    background-color: white;  /* White background for the contact box */
+    padding: 30px;  /* Padding inside the contact container */
+    border-radius: 10px;  /* Rounded corners for the contact box */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);  /* Subtle shadow effect */
+}
+
+/* Contact Info Section */
+.contact-info h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;  /* Dark color for the heading */
+    text-align: center;  /* Center the heading */
+    margin-bottom: 20px;  /* Space below the heading */
+}
+
+/* Contact Info List */
+.contact-info ul {
+    list-style-type: none;  /* Remove default list bullets */
+    padding: 0;  /* Remove padding */
+    margin: 0;  /* Remove margin */
+}
+
+/* Contact Info List Items */
+.contact-info li {
+    font-size: 18px;
+    color: #7f8c8d;  /* Lighter text color for list items */
+    margin: 15px 0;  /* Vertical space between items */
+    display: flex;  /* Use flex to align icons with text */
+    align-items: center;  /* Vertically align the icons with text */
+}
+
+/* Contact Info Icons */
+.contact-info li i {
+    margin-right: 15px;  /* Space between the icon and the text */
+    color: #3498db;  /* Blue color for icons */
+    font-size: 20px;  /* Icon size */
+}
+
+/* Hover Effect for Contact Info */
+.contact-info li:hover {
+    background-color: #f1f1f1;  /* Slightly darken the background on hover */
+    border-radius: 5px;  /* Rounded corners on hover */
+    cursor: pointer;  /* Change cursor to pointer */
+    transition: background-color 0.3s ease-in-out;  /* Smooth hover effect */
+}
+
+.contact-info a {
+    color: #3498db;  /* Blue color for the link */
+    text-decoration: none;  /* Remove underline */
+    font-weight: bold;  /* Make the link bold */
+}
+
+.contact-info a:hover {
+    text-decoration: underline;  /* Underline the link on hover */
+    color: #2980b9;  /* Darker blue color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info h2 {
+        font-size: 24px;  /* Smaller font size on mobile */
+    }
+
+    .contact-info li {
+        font-size: 16px;  /* Smaller font size for list items */
+    }
+
+    .contact-info li i {
+        font-size: 18px;  /* Smaller icons on mobile */
+    }
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #333;   /* Dark background for footer */
+    color: white;             /* White text color */
+    padding: 20px 0;          /* Padding for top and bottom */
+    text-align: center;       /* Center the text */
+    font-size: 14px;          /* Set font size */
+}
+
+/* Footer Container */
+footer .container {
+    max-width: 1200px;        /* Set maximum width for the container */
+    margin: 0 auto;           /* Center the container */
+    padding: 0 20px;          /* Padding for left and right */
+}
+
+/* Footer Paragraph */
+footer p {
+    margin: 0;                /* Remove default margin */
+    padding-bottom: 10px;     /* Add space below the text */
+}
+
+/* Footer List */
+footer ul {
+    list-style: none;         /* Remove default list styling */
+    padding: 0;               /* Remove default padding */
+    margin: 0;                /* Remove default margin */
+    display: inline-flex;     /* Align the links inline */
+    gap: 20px;                /* Space between links */
+}
+
+/* Footer List Items */
+footer ul li {
+    display: inline;          /* Display list items inline */
+}
+
+/* Footer Links */
+footer ul li a {
+    color: #fff;              /* White text for the links */
+    text-decoration: none;    /* Remove underline */
+    font-weight: 600;         /* Make the links bold */
+    transition: color 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+/* Footer Links Hover Effect */
+footer ul li a:hover {
+    color: #3498db;           /* Change color to blue on hover */
+    text-decoration: underline;  /* Underline the link on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer ul {
+        flex-direction: column; /* Stack links vertically on smaller screens */
+        gap: 10px;              /* Reduced gap between links */
+    }
+
+    footer p {
+        font-size: 12px;        /* Reduce font size for smaller screens */
     }
 }
