@@ -27,17 +27,16 @@ header {
 }
 header.scrolled {
     background-color: rgb(255, 255, 255); /* White background */
-    opacity: 0.5;  /* Slightly higher opacity for better visibility of the content */
-    transition: all 0.3s ease;  /* Smooth transition when the class is added or removed */
+    opacity: 0.9;  /* Slightly higher opacity for better visibility */
+    transition: all 0.3s ease; 
 }
 
-
-/* Optional: To ensure text visibility with low opacity */
+/* Optional: Ensure text visibility with low opacity */
 header.scrolled * {
-    color: #000; /* Text color will be black to ensure readability */
+    color: #000; /* Text color */
 }
 
-
+/* Navbar */
 .container {
     display: flex;
     align-items: center;
@@ -65,6 +64,62 @@ header.scrolled * {
     color: black;
     font-size: 16px;
 }
+
+/* Hamburger Menu */
+.hamburger {
+    display: none; /* Hidden by default, shown in mobile view */
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: absolute;
+    right: 20px; /* Adjust the right margin as needed */
+    top: 20px;   /* Adjust the top margin to align with your header */
+    width: 30px;
+    height: 24px;
+}
+
+.hamburger div {
+    background-color: black;
+    height: 3px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: white;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .nav-links.active {
+        display: flex; /* Ensure it becomes visible when active */
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    .hamburger {
+        display: flex; /* Display hamburger menu on small screens */
+    }
+    .nav-links {
+        display: none; /* Hide the navigation links initially */
+    }
+    .nav-links.active {
+        display: flex; /* Show when active */
+    }
+}
+
+
+
+
+
 
 /* Hero Section */
 .hero {
