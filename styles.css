@@ -468,7 +468,7 @@ header.scrolled * {
     margin: 20px 0;
     letter-spacing: 1.2px;
     line-height: 1.4;
-    font-family: "Send Flowers", cursive;
+    font-family: "Barlow Condensed", cursive;
 }
 
 /* Responsive Slider Subheading */
@@ -780,3 +780,123 @@ footer ul li a:hover {
 }
 
 
+
+
+
+
+
+  
+  /* Testimonials Section */
+  .testimonials {
+    padding: 80px 20px;
+    /* background-color: #F7F5ED; */
+    background-image: url("image/water-1330252_1920.jpg");
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .container h2 {
+    padding: 20px; /* Original padding */
+    font-size: 2.4rem; /* Larger text for prominence */
+    font-weight: 700; /* Bold for emphasis */
+    text-align: left; /* Center alignment for better readability */
+   
+}
+
+  /* Section Title */
+  .section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #00c897;
+    margin: 10px auto 0;
+  }
+  
+  /* Testimonial Wrapper */
+  .testimonial-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Single Testimonial */
+  .testimonial {
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 500px;
+    flex: 1 1 45%;
+  }
+  
+  .testimonial:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Testimonial Content */
+  .testimonial p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  /* Customer Info */
+  .customer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .customer img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: 3px solid #00c897;
+  }
+  
+  .customer h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+  }
+  
+  .customer span {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .testimonial-wrapper {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .testimonial {
+      flex: 1 1 100%;
+    }
+  
+    .section-title {
+      font-size: 2.2rem;
+    }
+  }
+  
