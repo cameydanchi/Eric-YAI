@@ -141,7 +141,7 @@ header.scrolled * {
     color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
-    justify-content: center; /* Centers content horizontally */
+    justify-content: flex-start; /* Centers content horizontally */
     padding: 0 40px;
     z-index: 1
 }
@@ -171,6 +171,7 @@ header.scrolled * {
     margin-bottom: 20px;
     font-family: "Barlow Condensed", sans-serif;
     color: #ffffff; /* Vibrant teal */
+    
 }
 
 .hero-content p {
