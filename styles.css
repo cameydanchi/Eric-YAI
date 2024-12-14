@@ -39,7 +39,7 @@ header.scrolled * {
 }
 
 /* Navbar */
-.container {
+.container-1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -385,8 +385,8 @@ header.scrolled * {
  
 
 .mission-vision-section {
-    background: linear-gradient(135deg, #0077b6, #0096c7); /* Blue gradient */
-    color: #ffffff; /* White text */
+    background: #DFF7FA; /* Blue gradient */
+    color: #fffbfb; /* White text */
     padding: 80px 20px;
     text-align: center;
 }
@@ -402,7 +402,7 @@ header.scrolled * {
 
 /* Mission & Vision Box */
 .mission-vision-box {
-    background: rgba(0, 0, 0, 0.05);
+    background: rgb(88, 86, 86);
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: #ffffff; /* Text color for dark background */
     border-radius: 15px;
@@ -503,18 +503,10 @@ header.scrolled * {
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full viewport height */
-    background-color: #F1F7FB;
+    background-color: #DFF7FA;
     padding: 30px 10px; /* Reduce horizontal padding for mobile */
 }
 
-/* General Section Styling */
-.slider-section {
-    background-color: #F7F7F7;
-    padding: 40px 20px;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-    height: 90vh;
-}
 
 .slider-header {
     margin-bottom: 30px;
@@ -646,7 +638,7 @@ header.scrolled * {
     justify-content: center;  /* Center the content horizontally */
     align-items: center;  /* Center the content vertically */
     padding: 50px 0;  /* Top and bottom padding for spacing */
-    background-color: #ecf0f1;  /* Light background color */
+    background-color: #DFF7FA;  /* Light background color */
 }
 
 /* Contact Container */
@@ -807,17 +799,17 @@ footer ul li a:hover {
   /* Testimonials Section */
   .testimonials {
     padding: 80px 20px;
-    /* background-color: #F7F5ED; */
-    background-image: url("image/water-1330252_1920.jpg");
+    background-color:#DFF7FA;
+   
   }
   
-  .container {
+  .container1 {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
   }
   
-  .container h2 {
+  .container1 h2 {
     padding: 20px; /* Original padding */
     font-size: 2.4rem; /* Larger text for prominence */
     font-weight: 700; /* Bold for emphasis */
