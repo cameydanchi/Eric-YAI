@@ -369,7 +369,7 @@ header.scrolled {
 
 /* About Section Styling (Single Image) */
 .about-section {
-    background-color: #b2d7b2;
+    background-color: #ffffff;
     padding: 60px 20px;
     font-family: 'Arial', sans-serif;
 }
@@ -393,10 +393,10 @@ header.scrolled {
 
 .about-text h2 {
     font-size: 2.5rem;
-    color: #0077b6;
+    color: #24d439;
     margin-bottom: 20px;
     font-weight: 700;
-    border-left: 4px solid #1d4a61;
+    border-left: 4px solid #78d98b;
     padding-left: 10px;
 }
 
@@ -408,7 +408,7 @@ header.scrolled {
 }
 
 .about-text strong {
-    color: #00b4d8;
+    color: #30bc24;
 }
 
 .about-image {
@@ -890,12 +890,9 @@ header.scrolled {
 
 
 
-
-
 /* Section Styling */
 .effortless-irrigation {
-    background: #f0fdf4;
-    /* Light green */
+    background: #f0fdf4; /* Light green */
     color: #033b1e;
     text-align: center;
     padding: 50px 20px;
@@ -905,8 +902,7 @@ header.scrolled {
 .section-header h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #047857;
-    /* Deep green */
+    color: #047857; /* Deep green */
 }
 
 .section-header p {
@@ -915,7 +911,6 @@ header.scrolled {
     color: #065f46;
     font-family: "Roboto", serif;
     font-weight: 400;
-    font-style: normal;
 }
 
 /* Content Items */
@@ -950,23 +945,16 @@ header.scrolled {
     color: #444;
     font-family: "Roboto", serif;
     font-weight: 400;
-    font-style: normal;
 }
 
 .image {
     flex: 1;
-    height: 300px;
-    /* Fixed height for the container */
+    height: 300px; /* Default fixed height */
     background-size: cover;
-    /* Ensures the image covers the div */
     background-position: center;
-    /* Keeps the image centered */
     border-radius: 8px;
-    /* Optional: Adds rounded corners */
     width: 100%;
-    /* Makes sure the image fills the entire width of the container */
 }
-
 
 /* Custom Background Images */
 .maize .image {
@@ -980,9 +968,6 @@ header.scrolled {
 .vegetables .image {
     background-image: url('image/_\ \(2\).jpeg');
 }
-
-
-
 
 @media (max-width: 768px) {
     .irrigation-item {
@@ -1000,14 +985,13 @@ header.scrolled {
         font-size: 1.8rem;
     }
 
-    /* Ensure images are responsive */
+    /* Ensure images are larger and more visible on smaller screens */
     .image {
-        height: auto; /* Let the height adjust automatically */
+        height: 400px; /* Increase the height of the image on smaller screens */
         width: 100%; /* Make image fill the container */
         max-width: 100%; /* Prevent image from stretching beyond its container */
-        border-radius: 8px; /* Keep the border-radius */
-        object-fit: cover; /* Ensures the image fills the container properly */
-        object-position: center; /* Keep the image centered */
+        object-fit: cover; /* Ensure image covers the div without distortion */
+        object-position: center; /* Keeps the image centered */
     }
 }
 
